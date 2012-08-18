@@ -1,0 +1,375 @@
+/*
+	Style For Eposys Online
+	Style Name: Silveria
+	Author: Quoc Viet (aFeLiOn)
+*/
+
+BODY {
+	margin: auto;
+	padding: 0;
+	background-color: #f5f5f5;
+	width: 977px;
+}
+
+.eps TABLE, .eps DIV, .eps FORM, .eps P, .eps H1, .eps H2, .eps H3,
+.eps H4, .eps PRE, .eps BLOCKQUOTE, .eps UL, .eps OL, .eps LI, .eps DL,
+.eps DT, .eps DD, .eps TH, .eps TD, .eps FIELDSET, .eps IMG {
+	margin: 0px;
+	padding: 0px;
+	font-weight: normal
+}
+.eps INPUT, .eps SELECT, .eps TEXTAREA, .eps OPTGROUP {margin: 0}
+
+* HTML .eps, * HTML .eps_inmain, * HTML .inbox, * HTML .inform {height: 1px}
+
+.eps, .eps TABLE, .eps INPUT, .eps SELECT, .eps TEXTAREA {font: 11px Verdana,Tahoma}
+.eps CODE {font: 1.1em "Courier New"}
+.eps UL {list-style-position: inside}
+.eps IMG {border: none}
+
+/*******[ PAGE LAYOUT ]*******/
+#eps_wrap {
+	background: #ffffff;
+	color: #303030;
+	min-width: 600px;
+	margin: 7px;
+	padding: 10px
+}
+#eps_header {
+	height: 250px;
+	background: url('../image/eps_banner.jpg') no-repeat
+}
+#eps_footer {padding: 20px; clear: both; height: 20px}
+#eps_left {
+	float: left; clear: left;
+	width: 190px
+}
+#eps_right {
+	float: right; clear: right;
+	width: 170px
+}
+#eps_main {margin: 0 180px 10px 200px}
+#redirect, #maintain {margin: 10% 20% 10% 20%}
+
+#eps_header H1 {
+	display: none;
+	position: relative;
+	top: 20px;
+	left: 170px;
+	font: bolder 4em Verdana;
+	color: #d4d9b4
+}
+#eps_header SPAN {
+	display: none;
+	position: relative;
+	top: 25px;
+	left: 170px;
+	font: bolder 2em Verdana;
+	color: #d4d9b4
+}
+
+.eps .ajax_indicator {
+	font: 8pt Tahoma;
+	background: url('../image/indicator.gif') no-repeat;
+	padding-left: 20px;
+	margin-top: 2px;
+	height: 18px;
+}
+
+* HTML #ajax_status {position: absolute}
+
+.eps .clear {clear: both}
+.eps .clearleft {clear: left}
+.eps .clearright {clear: right}
+
+/*******[ MARGIN, PADDING ]*******/
+#eps_left .box, #eps_right .box, .eps .message, .eps .alert, .album A {
+	margin-bottom: 20px
+}
+#eps_header, #eps_left, #eps_right, .eps fieldset, .eps_inmain .inform {
+	margin-bottom: 10px
+}
+.eps .pagination, .eps .text, .eps .infieldset {
+	margin-bottom: 5px;
+}
+
+.eps .eps_inmain, .eps .message, .eps .alert_body {padding: 10px}
+.eps .inbox, .eps .box_head, .eps .infieldset, .tbl TH, .tbl TD {padding: 5px}
+.eps INPUT, .eps SELECT, .eps TEXTAREA {padding: 2px}
+.list LI {padding: 1px}
+
+.eps .pagination {padding-top: 1em}
+.text P, .inform P, .text H3, #redirect P, #maintain P {padding-top: 0.5em}
+
+.eps .desc, .eps H2, .text H3 {padding-bottom: 0.5em}
+.eps .text {padding-bottom: 1px}
+
+.eps TABLE, .eps .text, .eps .album {width: 100%}
+.eps .text, .eps .album {overflow: hidden}
+
+.eps .txtinput {width: 90%}
+.txtinput TEXTAREA, .eps .longinput {width: 100%}
+.txtinput P {text-indent: 0.5em}
+
+.inform P INPUT {margin: 0 5px}
+
+.eps LABEL {display: block; margin: 0.5em}
+
+.eps .inline LABEL {display: inline; padding-right: 0.5em}
+.eps .floatinline {float:left; display: inline; padding-right: 0.5em}
+.eps .confirmimg {vertical-align: text-bottom; margin-left: 2em}
+
+.pagination A, .pagination SPAN {padding: 0 3px 1px 3px}
+
+.alert UL {padding-left: 1em}
+
+/*******[ BOX - BORDER - TABLE ]*******/
+#eps_wrap, #eps_footer, .eps_inmain, .eps .box, .album IMG, .gallery IMG,
+.eps .tbl, .eps .confirmimg, .eps FIELDSET, .eps INPUT, .eps SELECT, .eps TEXTAREA, .eps CHECKBOX {
+	border: 1px solid #dcdcdc
+}
+
+.eps .alert {border-top: 1px solid; border-bottom: 1px solid; border-color: #ff8b53}
+
+.eps .box_head, .tbl TH {
+	border-bottom: 1px solid #dcdcdc
+}
+.tbl TH, .tbl TD {
+	border-left: 1px solid #dcdcdc;
+}
+.tbl TFOOT TH {
+	border-top: 1px solid #dcdcdc;
+	border-bottom: none;
+}
+.tbl .coll {border-left: none; width: 5%; text-align: center}
+.tbl .col2 {width: 35%}
+.tbl .col3 {text-align: center}
+.tbl .colr {width: 30%; text-align: center}
+
+.eps .desc {border-bottom: 1px dashed #dcdcdc}
+
+/*******[ LIST ]*******/
+.desc UL, .desc_right UL {list-style: none}
+.list UL {list-style: disc inside}
+
+.desc LI, .desc_right LI {
+	display: inline;
+	margin-right: 10px
+}
+
+/*******[ STYLE ]*******/
+.eps .desc, .eps .desc_right, .eps .postedit {font-family: Tahoma}
+
+#eps_footer, .eps .gallery, .eps .show {text-align: center}
+
+.eps .box_head {
+	background: url(../image/box_head_bg.png) repeat-x;
+	font-weight: bold;
+	font-size: 1.1em;
+	font-variant: small-caps;
+	letter-spacing: -1px
+}
+
+.eps .title H2 {
+	font-size: 1.4em; font-weight: bold;
+	letter-spacing: 0.5em
+}
+
+.eps .alert_head {font-size: 1.3em; font-weight: bold; text-align: center}
+.alert P {line-height: 2em}
+
+.title H2, .text H3 {font-variant: small-caps}
+
+.eps .text {text-align: justify}
+.eps .postedit {font-style: italic; text-align: right}
+.text H3, .album H3, .gallery H3 {font-size: 1.3em; font-weight: bold}
+
+.eps .desc {}
+.eps .desc_right {float: right}
+
+.eps .pagination {
+	font: 0.9em Tahoma;
+	text-align: right
+}
+
+.eps .albumodd {float: left; width: 45%}
+.eps .albumeven {float: right; width: 45%}
+
+.eps .jumpbox {text-align: right}
+
+.eps .bl_quote, .eps .bl_code {
+	margin: 5px;
+	padding: 5px;
+	background-color: #f7f7f7;
+	border: 1px dotted #dcdcdc;
+	width: 80%
+}
+.bl_quote .bl_title{
+	font-style: italic;
+	margin-bottom: 2px 
+}
+.eps .debug {
+	font: 0.95em "Courier New";
+	letter-spacing: -1px
+}
+
+/*******[ COLOR ]*******/
+.eps INPUT, .eps SELECT, .eps TEXTAREA {background-color: #f7f7f7}
+.eps LEGEND {color: #303030}
+
+.eps .title H2 {color: #6495ed}
+
+.tbl TH {background-color: #f5f5f5}
+.tbl .rowodd {}
+.tbl .roweven {background-color: #fcfcfc}
+.eps .newsodd {}
+.eps .newseven {}
+
+.eps .alert {background-color: #fff7f7}
+.eps .alert_head {background-color: #fff7f7; color: #ce4542}
+.message H2 {color: #6495ed}
+
+.text H3 {color: #409b38}
+.gallery H2 {color: #006633}
+
+.eps .desc, .eps .desc_right, .eps .postedit {color: #a9a9a9}
+.eps .pagination {color: #707070}
+.eps .debug {color: #c0c0c0}
+.today_birth UL {color: #fc8074}
+.tomor_birth UL {color: #d3d3d3}
+
+/*******[ IMAGE ]*******/
+.text .topicimg {
+	float: right;
+	margin: 2px 2px 2px 10px;
+	padding: 2px;
+	border: 2px solid #f0f0f0;
+}
+.eps .emoticon {
+	display: inline;
+	vertical-align: middle;
+}
+.album IMG {
+	float: left;
+	height: 60px;
+	width: 80px;
+	padding: 0.5em;
+	margin-right: 1em;
+}
+.gallery IMG {
+	padding: 2px;
+	margin: 2px;
+	vertical-align: middle;
+}
+
+/*******[ TOOLBAR ]*******/
+.eps .toolbar {text-align: center; font-size: 0.8em}
+.toolbar INPUT {margin: 0; padding: 0}
+
+/*******[ LINK ]*******/
+.eps A {text-decoration: none}
+
+.text A:link, .text A:visited {border-bottom: 1px dashed; color: #409b38}
+.text H3 A:link, .text H3 A:visited {border: none; color: #409b38}
+.desc A:link, .desc A:visited, #brief_news .desc_right A:link, #brief_news .desc_right A:visited {
+	text-decoration: underline;
+	border: none;
+	color: #a9a9a9
+}
+.list A:link, .list A:visited {color: #86660c}
+.album A:link, .album A:visited {color: #8c6e82}
+#brief_news A:link, #brief_news A:visited {color: #240fae}
+#forum_topic A:link, #forum_topic A:visited {color: #ba8730}
+#eps_calendar A:link, #eps_calendar A:visited {color: #ba8730}
+#wotd A:link, #wotd A:visited {color: #8e749a}
+
+.pagination A:link, .pagination A:visited, .pagination A:hover, .pagination SPAN {
+	color: #707070;
+	border: 1px #dcdcdc solid
+}
+
+.text A:hover {border-bottom: 1px solid}
+.text H3 A:hover, #eps_right A:hover, .list A:hover, #brief_news A:hover {text-decoration: underline; border: none}
+.desc A:hover, #brief_news .desc_right A:hover {color: #303030}
+.album A:hover {background-color: #f7f7f7;}
+
+/*******[ CALENDAR ]*******/
+.calendar TD {padding: 1px; text-align: center}
+.calendar .cal_head {font-weight: bold; padding-bottom: 5px}
+.cal_head SPAN {padding: 0 3px}
+.calendar .cal_head2 {background-color: #f5f5f5; font-size: 0.8em;}
+.calendar .cal_other {color: #c0c0c0}
+.calendar .cal_today {border: 1px #ff9900 solid}
+.calendar .cal_sat {color: #216295}
+.calendar .cal_sun {color: #993300}
+
+/*******[ POPUP ]*******/
+.eps A .popup {display: none; text-decoration: none}
+.popup UL {list-style: circle inside}
+.eps A:hover .popup {
+	display: block;
+	position: absolute;
+	color: #303030;
+	background-color: #ffffff;
+	border: 1px solid #dcdcdc;
+	border-left: 4px solid #dcdcdc;
+	width: 300px;
+	padding: 5px;
+	z-index: 3;
+	filter: alpha(opacity=87);
+	opacity: 0.87;
+	-moz-opacity: 0.87
+}
+
+.eps .dropdown {
+	position: absolute;
+	text-decoration: none;
+	text-align: center;
+	background-color: #ffffff;
+	border: 1px solid #dcdcdc;
+	width: 200px;
+	padding: 5px;
+}
+
+/*******[ NAVIGATION ]*******/
+.nav UL {
+	list-style: none outside;
+	margin: 0 0 20px 0;
+	padding: 0;
+}	
+.nav LI {
+	margin-bottom: 3px;
+}
+.nav LI A {
+	font-weight: bold;
+	height: 19px;
+	color: #505050;
+	display: block;
+	padding: 5px 0 0 8px;
+	background: #f5f5f5;
+	border: none; text-decoration: none;
+	border-left: 5px solid #d0d0d0;
+}
+.nav LI A:hover {
+	background: #e7efff;
+	color: #0061a5;
+	border: none; text-decoration: none;
+	border-left: 5px solid;
+}
+.in_index #nav_index A, #nav_index A:hover {border-left-color: #8e749a}
+.in_classlist #nav_classlist A, #nav_classlist A:hover {border-left-color: #f1be00}
+.in_userlist #nav_userlist A, #nav_userlist A:hover {border-left-color: #d8e0fe}
+.in_album #nav_album A, #nav_album A:hover {border-left-color: #29b862}
+.in_login #nav_login A, #nav_login A:hover {border-left-color: #fc8668}
+.in_register #nav_register A, #nav_register A:hover {border-left-color: #860790}
+.in_post #nav_post A, #nav_post A:hover {border-left-color: #bc4b40}
+.in_share #nav_share A, #nav_share A:hover {border-left-color: #b39688}
+.in_profile #nav_profile A, #nav_profile A:hover {border-left-color: #d0f1ce}
+.in_event_edit #nav_event_edit A, #nav_event_edit A:hover {border-left-color: #d890b4}
+.in_poll_edit #nav_poll_edit A, #nav_poll_edit A:hover {border-left-color: #f4a830}
+.in_postmark #nav_postmark A, #nav_postmark A:hover {border-left-color: #5468ac}
+.in_admin #nav_admin A, #nav_admin A:hover {border-left-color: #7a605a}
+.in_extension #nav_extension A, #nav_extension A:hover {border-left-color: #fbe480}
+.in_logout #nav_logout A, #nav_logout A:hover {border-left-color: #50b898}
+.in_forum #nav_forum A, #nav_forum A:hover {border-left-color: #f0fba0}
+/**************************/
